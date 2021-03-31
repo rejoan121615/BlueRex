@@ -1,0 +1,91 @@
+@function pxCon($size) {
+    @return $size + px;
+}
+
+// padding
+@mixin padX($val) {
+    padding-top: $val;
+    padding-bottom: $val;
+    @content;
+}
+// ----------------------------------------------
+// responsive
+// ----------------------------------------------
+// break points
+
+$x_sm: "576px";
+$sm: "768px";
+$md: "992px";
+$lg: "1200px";
+$xl: "1400px";
+$xxl: "1900px";
+
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// container
+%container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    //extra small
+    @include resp($x_sm) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    // small
+    @include resp($sm) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    // medium
+    @include resp($md) {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        @include center;
+    }
+    //extra  large
+    @include resp($xl) {
+        width: 85%;
+    }
+    // extra extra large
+    @include resp($xxl) {
+        max-width: 1700px;
+    }
+}
+
+.container {
+    @extend %container;
+    @include padX(120px);
+}
+
+// fonts
+$fonts: (
+    MontRegular: "../fonts/Montserrat-Regular.otf",
+    MontSemiBold: "../fonts/Montserrat-SemiBold.otf",
+    Palatino: "../fonts/Palatino Linotype.ttf",
+);
+
+
+@each $name, $address in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url($address);
+    }
+}
+
+
+
+
+
+
+

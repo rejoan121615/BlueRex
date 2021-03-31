@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .container {
+    max-width: 1700px;
+  }
+}
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@font-face {
+  font-family: MontRegular;
+  src: url("../fonts/Montserrat-Regular.otf");
+}
+@font-face {
+  font-family: MontSemiBold;
+  src: url("../fonts/Montserrat-SemiBold.otf");
+}
+@font-face {
+  font-family: Palatino;
+  src: url("../fonts/Palatino Linotype.ttf");
+}
+
+/*# sourceMappingURL=style.css.map */
