@@ -1,0 +1,65 @@
+#award_client {
+    background-color: $violet;
+    .container {
+        width: 100%;
+        @include flex;
+        flex-direction: column;
+        @include padY(0, 0);
+        @include resp ($md) {
+            flex-direction: row;
+        }
+        .options {
+            cursor: pointer;
+            flex-basis: 100%;
+            background-color: $violet;
+            transition: background-color 0.5s;
+            @include padX(100px, 100px);
+            padding: 35px 15px;
+            &:hover {
+                background-color: darken($color: $violet, $amount: 20);
+            }
+            @include resp ($x_sm) {
+                max-width: 450px;
+                @include center;
+                padding: 50px 20px;
+                border-radius: 10px;
+            }
+            @include resp ($md) {
+                flex-basis: (90% / 3);
+                max-width: initial;
+                padding: 70px 45px;
+            }
+
+            // image 
+            img {
+                width: 120px;
+                display: block;
+                @include center;
+            }
+            .heading {
+                margin-top: 25px;
+            }
+            .heading2 {
+                @extend .heading;
+                margin-top: 25px;
+                font-size: 25px!important;
+                font-weight: lighter;
+                span {
+                    font-weight: bold;
+                    font-size: 30px;
+                    
+                }
+            }
+            
+            // para 
+            .para {
+                text-align: center;
+                width: 90%;
+                @include center;
+            }
+
+
+
+        }
+    }
+}

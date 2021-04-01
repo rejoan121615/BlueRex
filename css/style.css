@@ -105,7 +105,7 @@
   width: 40px;
   margin-right: 10px;
 }
-#header nav.container .brand .heading {
+#header nav.container .brand .heading, #header #award_client nav.container .brand .options .heading2, #award_client #header nav.container .brand .options .heading2, #header #award_client nav.container .options .brand .heading2, #award_client #header nav.container .options .brand .heading2 {
   display: inline-block;
   font-size: 1.8rem;
 }
@@ -232,7 +232,7 @@ main#main .texts {
     margin-right: auto;
   }
 }
-main#main .texts .heading {
+main#main .texts .heading, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
   margin-top: 15px;
 }
 main#main .texts .para {
@@ -303,6 +303,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #award_client .container .ideas .options .heading2,
+#award_client #dream_big .container .ideas .options .heading2,
+#dream_big #award_client .container .options .ideas .heading2,
+#award_client #dream_big .container .options .ideas .heading2,
 #dream_big .container .ideas li,
 #dream_big .container .ideas .para {
   color: #484848;
@@ -310,12 +314,16 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 @media only screen and (min-width: 1200px) {
   #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #award_client .container .ideas .options .heading2,
+#award_client #dream_big .container .ideas .options .heading2,
+#dream_big #award_client .container .options .ideas .heading2,
+#award_client #dream_big .container .options .ideas .heading2,
 #dream_big .container .ideas li,
 #dream_big .container .ideas .para {
     text-align: left;
   }
 }
-#dream_big .container .ideas .heading {
+#dream_big .container .ideas .heading, #dream_big #award_client .container .ideas .options .heading2, #award_client #dream_big .container .ideas .options .heading2, #dream_big #award_client .container .options .ideas .heading2, #award_client #dream_big .container .options .ideas .heading2 {
   margin-top: 25px;
 }
 @media only screen and (min-width: 1200px) {
@@ -414,6 +422,76 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   }
 }
 
+#award_client {
+  background-color: #4b2d7f;
+}
+#award_client .container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media only screen and (min-width: 992px) {
+  #award_client .container {
+    flex-direction: row;
+  }
+}
+#award_client .container .options {
+  cursor: pointer;
+  flex-basis: 100%;
+  background-color: #4b2d7f;
+  transition: background-color 0.5s;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding: 35px 15px;
+}
+#award_client .container .options:hover {
+  background-color: #1f1234;
+}
+@media only screen and (min-width: 576px) {
+  #award_client .container .options {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #award_client .container .options {
+    flex-basis: 30%;
+    max-width: initial;
+    padding: 70px 45px;
+  }
+}
+#award_client .container .options img {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#award_client .container .options .heading, #award_client .container .options .heading2 {
+  margin-top: 25px;
+}
+#award_client .container .options .heading2 {
+  margin-top: 25px;
+  font-size: 25px !important;
+  font-weight: lighter;
+}
+#award_client .container .options .heading2 span {
+  font-weight: bold;
+  font-size: 30px;
+}
+#award_client .container .options .para {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -431,17 +509,17 @@ footer {
   width: 100%;
 }
 
-.heading {
+.heading, #award_client .container .options .heading2 {
   font-family: MontSemiBold;
   font-size: 2.6rem;
 }
 @media only screen and (min-width: 1200px) {
-  .heading {
+  .heading, #award_client .container .options .heading2 {
     font-size: 2.9rem;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .heading {
+  .heading, #award_client .container .options .heading2 {
     font-size: 3.5rem;
   }
 }
@@ -481,13 +559,13 @@ footer {
   }
 }
 
-.heading,
+.heading, #award_client .container .options .heading2,
 .sec_heading,
 .para {
   color: white;
   text-align: center;
 }
-.heading::first-letter,
+.heading::first-letter, #award_client .container .options .heading2::first-letter,
 .sec_heading::first-letter,
 .para::first-letter {
   text-transform: capitalize;
