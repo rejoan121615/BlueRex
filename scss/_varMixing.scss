@@ -63,19 +63,15 @@ $xxl: "1900px";
     }
 }
 
-.container {
-    @extend %container;
-    @include padX(120px);
-}
+
 
 // fonts
 $fonts: (
     MontRegular: "../fonts/Montserrat-Regular.otf",
     MontSemiBold: "../fonts/Montserrat-SemiBold.otf",
     Palatino: "../fonts/Palatino Linotype.ttf",
-    PalatinoLight: '../fonts/PalatinoLightItalic.otf'
+    PalatinoLight: "../fonts/PalatinoLightItalic.otf",
 );
-
 
 @each $name, $address in $fonts {
     @font-face {
@@ -84,44 +80,42 @@ $fonts: (
     }
 }
 
-
-
-
-// color variable 
+// color variable
 $red: #f42267;
 $violet: #4b2d7f;
+$not_black: #484848;
 
-// font varibale 
+// font varibale
 $header: MontSemiBold;
 $para: MontRegular;
 $small_header: Palatino;
 $small_header_light: PalatinoLight;
 
-// padding 
+// padding
 
 @mixin padX($t, $b) {
     padding-top: $t;
     padding-bottom: $b;
 }
 
-@mixin padY($l, $r) {
-    padding-left: $t;
+@mixin padY($l, $b) {
+    padding-left: $l;
     padding-right: $b;
 }
 
-// margin 
-@mixin marX ($t, $b) {
+// margin
+@mixin marX($t, $b) {
     margin-top: $t;
     margin-bottom: $b;
 }
 
-@mixin marY ($l, $r) {
+@mixin marY($l, $r) {
     margin-left: $l;
     margin-right: $r;
 }
 
-// flex 
-@mixin flex () {
+// flex
+@mixin flex() {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -130,3 +124,13 @@ $small_header_light: PalatinoLight;
 
 
 
+.container {
+    @extend %container;
+    @include padX(120px, 120px);
+    @include resp($lg) {
+        @include padX(160px, 160px);
+    }
+    @include resp($xl) {
+        @include padX(180px, 180px);
+    }
+}

@@ -1,0 +1,115 @@
+#dream_big {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+                            "image"
+                            "ideas"
+                            ;
+        grid-row-gap: 100px;
+
+        // responsive 
+        @include resp ($lg) {
+            grid-template-columns: 1.2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 'ideas image';
+            grid-column-gap: 60px;
+            align-items: center;
+        }
+        // idea and texts
+        .ideas {
+            grid-area: ideas;
+            // heading
+            .sec_heading,
+            .heading,
+            li,
+            .para {
+                color: $not_black;
+                @include resp ($lg) {
+                    text-align: left;
+                }
+                
+            }
+            .heading {
+                margin-top: 25px;
+            }
+            .para {
+                @include resp ($lg) {
+                    margin-top: 40px;
+                }
+            }
+            // platform selection tab
+            #platform_select {
+                margin-top: 40px;
+                #select_container {
+                    @include flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // responsive
+                    @include resp($x_sm) {
+                        flex-direction: row;
+                    }
+                    @include resp($md) {
+                        max-width: 800px;
+                        @include center;
+                    }
+                    @include resp ($lg) {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+
+                    li {
+                        list-style: none;
+                        margin-bottom: 15px;
+                        color: white;
+                        text-align: center;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                        // responsive
+                        @include resp($x_sm) {
+                            flex-basis: 40%;
+                        }
+                        @include resp($md) {
+                            flex-basis: initial;
+                            margin-bottom: 0px;
+                        }
+                        @include resp ($lg) {
+                            flex-basis: 40%;
+                            margin-bottom: 20px;
+                        }
+                        @include resp ($xl) {
+                            flex-basis: initial;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            .btn_wrapper {
+                margin-top: 70px;
+                text-align: center;
+                @include resp ($xl) {
+                    text-align: left;
+                }
+            }
+        }
+        // selection main img
+        .highlight_img {
+            grid-area: image;
+            width: 100%;
+            img {
+                width: 100%;
+                max-width: 300px;
+                display: block;
+                @include center;
+                @include resp ($lg) {
+                    max-width: 450px;
+                }
+                @include resp ($xl) {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}

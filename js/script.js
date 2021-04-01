@@ -20,3 +20,15 @@ function changeImg() {
 
 
 resNavBtn.addEventListener('click', changeImg)
+
+
+
+// ------------------------------------------------------------ 
+            // dream big 
+// ---------------------------------------------------------
+const dreamBtnList = document.querySelectorAll(
+    "#platform_select #select_container li"
+);
+
+
+
