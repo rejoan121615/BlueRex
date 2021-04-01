@@ -1,0 +1,33 @@
+#lets_grow {
+    background: url('../img/curbve_svg.svg') no-repeat center bottom;
+    background-size: contain;
+    .container {
+        
+
+        .sec_heading, .heading, .para {
+            color: $not_black;
+        }
+        .heading {
+            margin-top: 25px;
+        }
+        // para 
+        .para {
+            margin-top: 40px;
+            @include resp ($md) {
+                max-width: 80%;
+                @include center;
+            }
+            @include resp ($lg) {
+                max-width: 1000px;
+            }
+        }
+
+        .btn_wrapper {
+            text-align: center;
+            margin-top: 75px;
+            @include resp ($lg) {
+                margin-top: 80px;
+            }
+        }
+    }
+}

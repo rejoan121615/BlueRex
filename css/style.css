@@ -492,6 +492,41 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   margin-right: auto;
 }
 
+#lets_grow {
+  background: url("../img/curbve_svg.svg") no-repeat center bottom;
+  background-size: contain;
+}
+#lets_grow .container .sec_heading, #lets_grow .container .heading, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2, #lets_grow .container .para {
+  color: #484848;
+}
+#lets_grow .container .heading, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2 {
+  margin-top: 25px;
+}
+#lets_grow .container .para {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 992px) {
+  #lets_grow .container .para {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #lets_grow .container .para {
+    max-width: 1000px;
+  }
+}
+#lets_grow .container .btn_wrapper {
+  text-align: center;
+  margin-top: 75px;
+}
+@media only screen and (min-width: 1200px) {
+  #lets_grow .container .btn_wrapper {
+    margin-top: 80px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
