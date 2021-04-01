@@ -1,7 +1,7 @@
 #header {
-    background: url("../img/main_bg.jpg") no-repeat center center;
+    background: url("../img/Flat-Mountains.svg") no-repeat center center;
     background-size: cover;
-    .container {
+    nav.container {
         @include padX(25px, 25px);
         display: grid;
         grid-template-columns: auto 30px;
@@ -33,10 +33,11 @@
             }
             .heading {
                 display: inline-block;
+                font-size: 1.8rem;
             }
         }
         // navbar
-        #navbar {
+        .navbar {
             // display: none;
             @include padX(45px, 45px);
             width: 100%;
@@ -53,7 +54,6 @@
 
             // RESPONSIVE
             @include resp($lg) {
-                display: block;
                 position: initial;
                 top: 0;
                 background-color: transparent;
@@ -63,9 +63,11 @@
                 justify-self: end;
                 @include padX(0, 0);
                 position: initial;
+                transform: translateY(0);
             }
             @include resp($xl) {
                 width: 65%;
+
             }
 
             li {
@@ -101,9 +103,7 @@
                     @include resp($lg) {
                         font-size: 18px;
                         @include padX(10px, 10px);
-                        &:hover {
-                            // transition: ;
-                        }
+                        
                     }
                 }
             }

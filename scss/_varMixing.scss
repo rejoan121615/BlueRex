@@ -73,6 +73,7 @@ $fonts: (
     MontRegular: "../fonts/Montserrat-Regular.otf",
     MontSemiBold: "../fonts/Montserrat-SemiBold.otf",
     Palatino: "../fonts/Palatino Linotype.ttf",
+    PalatinoLight: '../fonts/PalatinoLightItalic.otf'
 );
 
 
@@ -93,7 +94,8 @@ $violet: #4b2d7f;
 // font varibale 
 $header: MontSemiBold;
 $para: MontRegular;
-$header_stylish: Palatino;
+$small_header: Palatino;
+$small_header_light: PalatinoLight;
 
 // padding 
 

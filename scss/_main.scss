@@ -1,0 +1,41 @@
+main#main {
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "feat_img", "texts";
+    }
+
+    // featured image
+    .img_container {
+        grid-area: feat_img;
+        display: none;
+        .feature_img {
+        }
+    }
+
+    // main area text
+    .texts {
+        grid-area: texts;
+        // margin 
+        .heading {
+            margin-top: 15px;
+        }
+        .para {
+            margin-top: 35px;
+        }
+        // btn container 
+        .btn_container {
+            .btn {
+                margin-right: 25px;
+                &:last-child {
+                    margin-right: 0px;
+                    background-color: lighten($color: $violet, $amount: 10);
+                    &:hover {
+                        background-color: darken($color: $violet, $amount: 15);
+                    }
+                }
+            }
+        }
+    }
+}

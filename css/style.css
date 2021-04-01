@@ -52,11 +52,15 @@
   font-family: Palatino;
   src: url("../fonts/Palatino Linotype.ttf");
 }
+@font-face {
+  font-family: PalatinoLight;
+  src: url("../fonts/PalatinoLightItalic.otf");
+}
 #header {
-  background: url("../img/main_bg.jpg") no-repeat center center;
+  background: url("../img/Flat-Mountains.svg") no-repeat center center;
   background-size: cover;
 }
-#header .container {
+#header nav.container {
   padding-top: 25px;
   padding-bottom: 25px;
   display: grid;
@@ -64,7 +68,7 @@
   position: relative;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container {
+  #header nav.container {
     display: grid;
     grid-template-columns: 180px 1fr;
     grid-template-rows: auto;
@@ -72,27 +76,28 @@
     align-items: center;
   }
 }
-#header .container .brand {
+#header nav.container .brand {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   text-decoration: none;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container .brand {
+  #header nav.container .brand {
     grid-area: brand;
     justify-self: end;
   }
 }
-#header .container .brand img {
+#header nav.container .brand img {
   display: inline-block;
   width: 40px;
   margin-right: 10px;
 }
-#header .container .brand .heading {
+#header nav.container .brand .heading {
   display: inline-block;
+  font-size: 1.8rem;
 }
-#header .container #navbar {
+#header nav.container .navbar {
   padding-top: 45px;
   padding-bottom: 45px;
   width: 100%;
@@ -108,8 +113,7 @@
   z-index: 25;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container #navbar {
-    display: block;
+  #header nav.container .navbar {
     position: initial;
     top: 0;
     background-color: transparent;
@@ -122,32 +126,33 @@
     padding-top: 0;
     padding-bottom: 0;
     position: initial;
+    transform: translateY(0);
   }
 }
 @media only screen and (min-width: 1400px) {
-  #header .container #navbar {
+  #header nav.container .navbar {
     width: 65%;
   }
 }
-#header .container #navbar li {
+#header nav.container .navbar li {
   list-style: none;
   text-align: center;
   margin-bottom: 10px;
 }
-#header .container #navbar li:last-child {
+#header nav.container .navbar li:last-child {
   margin-bottom: 0px;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container #navbar li {
+  #header nav.container .navbar li {
     width: 14.2857142857%;
     margin-bottom: 0px;
   }
-  #header .container #navbar li:hover {
+  #header nav.container .navbar li:hover {
     transition: background-color 0.8s;
     background-color: #fa9bbb;
   }
 }
-#header .container #navbar li a {
+#header nav.container .navbar li a {
   font-family: MontSemiBold;
   font-size: 20px;
   text-transform: capitalize;
@@ -157,20 +162,20 @@
   cursor: pointer;
   transition: color ease-in 0.2s;
 }
-#header .container #navbar li a:hover {
+#header nav.container .navbar li a:hover {
   color: #fa9bbb;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container #navbar li a {
+  #header nav.container .navbar li a {
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-#header .container .active {
+#header nav.container .active {
   transform: translateY(0px) !important;
 }
-#header .container .res_nav {
+#header nav.container .res_nav {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -179,9 +184,39 @@
   transition: all 0.8s;
 }
 @media only screen and (min-width: 1200px) {
-  #header .container .res_nav {
+  #header nav.container .res_nav {
     display: none;
   }
+}
+
+main#main div.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "feat_img", "texts";
+}
+main#main .img_container {
+  grid-area: feat_img;
+  display: none;
+}
+main#main .texts {
+  grid-area: texts;
+}
+main#main .texts .heading {
+  margin-top: 15px;
+}
+main#main .texts .para {
+  margin-top: 35px;
+}
+main#main .texts .btn_container .btn {
+  margin-right: 25px;
+}
+main#main .texts .btn_container .btn:last-child {
+  margin-right: 0px;
+  background-color: #613aa5;
+}
+main#main .texts .btn_container .btn:last-child:hover {
+  background-color: #2a1947;
 }
 
 * {
@@ -200,18 +235,48 @@ header, section, footer {
 
 .heading {
   font-family: MontSemiBold;
+  font-size: 2.8rem;
 }
 
 .sec_heading {
-  font-family: Palatino;
+  font-family: PalatinoLight;
+  font-size: 2rem;
 }
 
 .para {
   font-family: MontRegular;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 1.4rem;
 }
 
 .heading, .sec_heading, .para {
   color: white;
+  text-align: center;
+}
+.heading::first-letter, .sec_heading::first-letter, .para::first-letter {
+  text-transform: capitalize;
+}
+
+.btn_container {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.btn {
+  font-family: MontSemiBold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 18px 38px;
+  background-color: #f42267;
+  text-decoration: none;
+  transition: background-color ease-in 0.5s, border 0.6s;
+  border-radius: 50px;
+}
+.btn:hover {
+  background-color: #77062b;
 }
 
 /*# sourceMappingURL=style.css.map */

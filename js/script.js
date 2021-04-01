@@ -1,7 +1,7 @@
 'use strict';
 
 const resNavBtn = document.querySelector('.res_nav');
-const NavBar = document.querySelector('#navbar');
+const NavBar = document.querySelector('.navbar');
 
 let condition = 1;
 
