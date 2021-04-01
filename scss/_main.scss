@@ -4,6 +4,13 @@ main#main {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "feat_img", "texts";
+        // responsive 
+        @include resp ($md) {
+            padding-bottom: 150px;
+        }
+        @include resp ($lg) {
+            @include padX(150px, 200px);
+        }
     }
 
     // featured image
@@ -17,20 +24,48 @@ main#main {
     // main area text
     .texts {
         grid-area: texts;
+        // responsive 
+        @include resp ($lg) {
+            width: 75%;
+            @include center;
+        }
         // margin 
         .heading {
             margin-top: 15px;
         }
         .para {
             margin-top: 35px;
+            @include resp ($lg) {
+                margin-top: 70px;
+            }
+            span {
+                display: none;
+                @include resp ($lg) {
+                    display: inline;
+                }
+            }
         }
         // btn container 
         .btn_container {
+            margin-top: 110px;
+            @include flex;
+            flex-direction: column;
+            align-items: center;
+            @include resp ($sm) {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 440px;
+                @include center;
+            }
             .btn {
-                margin-right: 25px;
                 &:last-child {
                     margin-right: 0px;
                     background-color: lighten($color: $violet, $amount: 10);
+                    margin-top: 25px;
+                    // responsive 
+                    @include resp ($sm) {
+                        margin-top: 0px;
+                    }
                     &:hover {
                         background-color: darken($color: $violet, $amount: 15);
                     }

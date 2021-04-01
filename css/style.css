@@ -195,6 +195,17 @@ main#main div.container {
   grid-template-rows: auto;
   grid-template-areas: "feat_img", "texts";
 }
+@media only screen and (min-width: 992px) {
+  main#main div.container {
+    padding-bottom: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main#main div.container {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+}
 main#main .img_container {
   grid-area: feat_img;
   display: none;
@@ -202,18 +213,58 @@ main#main .img_container {
 main#main .texts {
   grid-area: texts;
 }
+@media only screen and (min-width: 1200px) {
+  main#main .texts {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 main#main .texts .heading {
   margin-top: 15px;
 }
 main#main .texts .para {
   margin-top: 35px;
 }
-main#main .texts .btn_container .btn {
-  margin-right: 25px;
+@media only screen and (min-width: 1200px) {
+  main#main .texts .para {
+    margin-top: 70px;
+  }
+}
+main#main .texts .para span {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  main#main .texts .para span {
+    display: inline;
+  }
+}
+main#main .texts .btn_container {
+  margin-top: 110px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  main#main .texts .btn_container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 main#main .texts .btn_container .btn:last-child {
   margin-right: 0px;
   background-color: #613aa5;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 768px) {
+  main#main .texts .btn_container .btn:last-child {
+    margin-top: 0px;
+  }
 }
 main#main .texts .btn_container .btn:last-child:hover {
   background-color: #2a1947;
@@ -237,10 +288,55 @@ header, section, footer {
   font-family: MontSemiBold;
   font-size: 2.8rem;
 }
+@media only screen and (min-width: 768px) {
+  .heading {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .heading {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .heading {
+    font-size: 3.9rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .heading {
+    font-size: 4.5rem;
+  }
+}
 
 .sec_heading {
   font-family: PalatinoLight;
   font-size: 2rem;
+}
+@media only screen and (min-width: 576px) {
+  .sec_heading {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .sec_heading {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sec_heading {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sec_heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .sec_heading {
+    font-size: 3.3rem;
+  }
 }
 
 .para {
@@ -249,6 +345,12 @@ header, section, footer {
   font-weight: 700;
   letter-spacing: 1.2px;
   line-height: 1.4rem;
+}
+@media only screen and (min-width: 1200px) {
+  .para {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
 }
 
 .heading, .sec_heading, .para {
@@ -269,11 +371,13 @@ header, section, footer {
   font-size: 0.8rem;
   text-transform: uppercase;
   color: white;
-  padding: 18px 38px;
   background-color: #f42267;
   text-decoration: none;
   transition: background-color ease-in 0.5s, border 0.6s;
   border-radius: 50px;
+  width: 175px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .btn:hover {
   background-color: #77062b;
