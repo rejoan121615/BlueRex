@@ -100,6 +100,7 @@ header, section , footer {
     border-radius: 50px;
     width: 175px;
     @include padX(20px, 20px);
+    text-align: center;
     // hover effect 
     &:hover {
         background-color: darken($color: $red, $amount: 30);

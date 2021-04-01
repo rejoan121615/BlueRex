@@ -378,6 +378,7 @@ header, section, footer {
   width: 175px;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .btn:hover {
   background-color: #77062b;
