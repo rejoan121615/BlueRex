@@ -86,6 +86,45 @@ $fonts: (
 
 
 
+// color variable 
+$red: #f42267;
+$violet: #4b2d7f;
+
+// font varibale 
+$header: MontSemiBold;
+$para: MontRegular;
+$header_stylish: Palatino;
+
+// padding 
+
+@mixin padX($t, $b) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+
+@mixin padY($l, $r) {
+    padding-left: $t;
+    padding-right: $b;
+}
+
+// margin 
+@mixin marX ($t, $b) {
+    margin-top: $t;
+    margin-bottom: $b;
+}
+
+@mixin marY ($l, $r) {
+    margin-left: $l;
+    margin-right: $r;
+}
+
+// flex 
+@mixin flex () {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    @content;
+}
 
 
 

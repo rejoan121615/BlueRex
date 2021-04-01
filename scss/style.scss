@@ -1,1 +1,44 @@
+// import files 
 @import 'varMixing';
+@import 'header';
+
+// reset css 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// common style 
+// heading 
+
+a, img {
+    display: inline-block;
+}
+
+header, section , footer {
+    width: 100%;
+}
+
+
+
+
+.heading {
+    font-family: $header;
+}
+
+.sec_heading {
+    font-family: $header_stylish;
+}
+
+.para {
+    font-family: $para;
+}
+
+
+.heading, .sec_heading , .para {
+    color: white;
+}
+
+

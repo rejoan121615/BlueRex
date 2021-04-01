@@ -9,26 +9,28 @@
     </head>
     <body>
         <!-- header  -->
-        <header>
+        <header id="header">
             <!-- nav bar  -->
-            <nav>
+            <nav class="container">
                 <!-- brand  -->
-                <div class="brand">
-                    <img src="" alt="" />
-                    <h1>BlueRex</h1>
-                </div>
+                <a href="" class="brand">
+                    <img src="./img/logo.png" alt="brnad icon" />
+                    <h1 class="heading">BlueRex</h1>
+                </a>
                 <!-- navbar  -->
-                <ul>
-                    <li>home</li>
-                    <li>about</li>
-                    <li>features</li>
-                    <li>product</li>
-                    <li>reviews</li>
-                    <li>faq</li>
-                    <li>contact</li>
+                <ul id="navbar">
+                    <li><a href=""> home </a></li>
+                    <li><a href=""> about </a></li>
+                    <li><a href=""> features </a></li>
+                    <li><a href=""> product </a></li>
+                    <li><a href=""> reviews </a></li>
+                    <li><a href=""> faq </a></li>
+                    <li><a href=""> contact </a></li>
                 </ul>
                 <!-- responsive nav btn  -->
-                <div class="res_nav"></div>
+                <div class="res_nav">
+                    <!-- <img src="./img/menu.png" alt="menu icons" /> -->
+                </div>
             </nav>
             <!-- ------------------------------------------------  -->
             <!-- main section  -->
@@ -200,7 +202,9 @@
                                 qui esse minima?
                             </p>
                             <div class="btn_wrapper">
-                                <a href="" onclick="alert()" class="btn_border">read more</a>
+                                <a href="" onclick="alert()" class="btn_border"
+                                    >read more</a
+                                >
                             </div>
                         </div>
                         <!-- live chat  -->
@@ -213,7 +217,9 @@
                                 qui esse minima?
                             </p>
                             <div class="btn_wrapper">
-                                <a href="" onclick="alert()" class="btn_border">read more</a>
+                                <a href="" onclick="alert()" class="btn_border"
+                                    >read more</a
+                                >
                             </div>
                         </div>
                     </div>
@@ -226,35 +232,43 @@
         <section id="recent_work">
             <div class="container">
                 <h1 class="heading">our recent works</h1>
-                <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, sapiente voluptate vero et quis dignissimos molestias nobis voluptatibus aperiam excepturi expedita minima laborum ducimus architecto. Delectus, maiores blanditiis a quidem perferendis in adipisci error molestiae, enim consequuntur et eum. Id mollitia molestiae eligendi maxime nisi aliquam! Quisquam rem quibusdam voluptatem.</p>
+                <p class="para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Impedit, sapiente voluptate vero et quis dignissimos
+                    molestias nobis voluptatibus aperiam excepturi expedita
+                    minima laborum ducimus architecto. Delectus, maiores
+                    blanditiis a quidem perferendis in adipisci error molestiae,
+                    enim consequuntur et eum. Id mollitia molestiae eligendi
+                    maxime nisi aliquam! Quisquam rem quibusdam voluptatem.
+                </p>
                 <!-- word lists section  -->
                 <div id="work_list">
                     <ul id="select_container">
-                            <li class="btn">web design</li>
-                            <li class="btn">mobile app</li>
-                            <li class="btn">hybrid app</li>
-                            <li class="btn">desktop software</li>
-                            <li class="btn">branding</li>
+                        <li class="btn">web design</li>
+                        <li class="btn">mobile app</li>
+                        <li class="btn">hybrid app</li>
+                        <li class="btn">desktop software</li>
+                        <li class="btn">branding</li>
                     </ul>
                     <!-- work list container  -->
                     <div id="work_list_container">
-                        <img src="" alt="">
+                        <img src="" alt="" />
                     </div>
                     <!-- load more btn  -->
                     <div class="btn_wrapper">
-                        <a href="" onclick="alert()" class="btn_border">read more</a>
+                        <a href="" onclick="alert()" class="btn_border"
+                            >read more</a
+                        >
                     </div>
                 </div>
             </div>
         </section>
         <!-- ------------------------------------------------------ -->
-                    <!-- brand section  -->
+        <!-- brand section  -->
         <!-- ------------------------------------------------------ -->
         <section id="brands">
             <div class="container">
-                <div class="brand_wrapper">
-
-                </div>
+                <div class="brand_wrapper"></div>
             </div>
         </section>
         <!-- ------------------------------------------------------ -->
@@ -263,27 +277,41 @@
         <section class="client_section">
             <div class="container">
                 <!-- swiper slider s  -->
-
             </div>
         </section>
         <!-- ------------------------------------------------------ -->
-                <!-- heed help contact section  -->
+        <!-- heed help contact section  -->
         <!-- ------------------------------------------------------ -->
         <section id="need_help">
             <div class="container">
                 <h1 class="heading">need help ?</h1>
                 <h6 class="sm_heading">Don't forget to contact with us</h6>
-                <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, sed nobis et mollitia eum quaerat provident culpa vero assumenda cupiditate similique cumque beatae. Assumenda, voluptate.</p>
+                <p class="para">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nesciunt, sed nobis et mollitia eum quaerat provident culpa
+                    vero assumenda cupiditate similique cumque beatae.
+                    Assumenda, voluptate.
+                </p>
                 <!-- form container  -->
                 <form id="form_input">
-                    <input class="input" type="text" value="" placeholder="name">
-                    <input class="input" type="text" value="" placeholder="email">
+                    <input
+                        class="input"
+                        type="text"
+                        value=""
+                        placeholder="name"
+                    />
+                    <input
+                        class="input"
+                        type="text"
+                        value=""
+                        placeholder="email"
+                    />
                     <button class="btn_border">submit</button>
                 </form>
             </div>
         </section>
         <!-- ------------------------------------------------------  -->
-                    <!-- social network  -->
+        <!-- social network  -->
         <!-- ------------------------------------------------------ -->
         <section id="social_media">
             <div class="container">
@@ -295,7 +323,7 @@
             </div>
         </section>
         <!-- ------------------------------------------------------  -->
-                    <!-- link section  -->
+        <!-- link section  -->
         <!-- ------------------------------------------------------ -->
         <section id="link_section">
             <div class="container">
@@ -317,10 +345,17 @@
             </div>
         </section>
         <!-- ------------------------------------------------------ -->
-                    <!-- footers  -->
+        <!-- footers  -->
         <!-- ------------------------------------------------------ -->
         <section id="footer">
-            <h3 class="heading">Developed by <a href="https://github.com/rejoan121615">Mohd Rejoan</a></h3>
+            <h3 class="heading">
+                Developed by
+                <a href="https://github.com/rejoan121615">Mohd Rejoan</a>
+            </h3>
         </section>
+        <!-- ------------------------------------------------------  -->
+        <!-- script  -->
+        <!-- ------------------------------------------------------  -->
+        <script src="./js/script.js"></script>
     </body>
 </html>
