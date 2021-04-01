@@ -1,0 +1,98 @@
+#creative_agency {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "video"
+            "texts";
+            // responsive 
+            @include resp ($lg) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                                    'texts video'
+                ;
+                grid-column-gap: 35px;
+                align-items: center;
+            }
+        // texts section
+        .text {
+            grid-area: texts;
+            margin-top: 65px;
+            .sec_heading,
+            .heading,
+            .para {
+                color: $not_black;
+            }
+            // supports
+            #support {
+                margin-top: 90px;
+                @include flex;
+                flex-direction: column;
+                @include resp ($sm) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                @include resp ($md) {
+                    max-width: 800px;
+                    @include center;
+                }
+                // childs
+                .items {
+                    flex-basis: 100%;
+                    &:last-child {
+                        margin-top: 80px;
+                    }
+                    // responsive 
+                    @include resp ($sm) {
+                        flex-basis: 45%;
+                        &:last-child {
+                            margin-top: 0px;
+                        }
+                    }
+                    img {
+                        display: block;
+                        @include center;
+                        width: 120px;
+                    }
+                    h4 {
+                        font-size: 25px;
+                        margin-top: 25px;
+                    }
+                    .para {
+                        margin-top: 25px;
+                        max-width: 370px;
+                        @include center;
+                    }
+                    .btn_wrapper {
+                        text-align: center;
+                        margin-top: 30px;
+                        .btn_border {
+                        }
+                    }
+                }
+            }
+        }
+        // video section
+        .videos {
+            grid-area: video;
+            @include resp ($md) {
+                text-align: center;
+            }
+            @include resp ($lg) {
+                text-align: right;
+            }
+            iframe {
+                width: 100%;
+                @include resp($md) {
+                    width: initial;
+                    width: 560px;
+                }
+                @include resp ($lg) {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}

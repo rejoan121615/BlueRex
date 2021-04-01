@@ -1,6 +1,9 @@
 #lets_grow {
-    background: url('../img/curbve_svg.svg') no-repeat center bottom;
+    background: wheat url('../img/curbve_svg.svg') no-repeat center bottom;
     background-size: contain;
+    @include resp ($lg) {
+        background-size: initial;
+    }
     .container {
         
 
