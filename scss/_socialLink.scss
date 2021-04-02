@@ -1,0 +1,85 @@
+#link_section {
+    background: url('../img/bg.png') no-repeat center bottom;
+    background-size: contain;
+    // container style 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+                            "image"
+                            "links"
+                            "image2"
+        ;
+        grid-row-gap: 75px;
+
+        // responsive 
+        @include resp ($sm) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+                                'image image2'
+                                'links links'
+            ;
+        }
+
+        @include resp ($lg) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                                'image links image2'
+            ;
+        }
+
+        .img_container {
+            padding: 15px;
+            border-radius: 8px;
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+            @include resp ($x_sm) {
+                max-width: 400px;
+                @include center;
+            }
+            @include resp ($md) {
+                max-width: 475px;
+            }
+            @include resp ($lg) {
+                max-width: initial;
+            }
+        }
+        // image 
+        .img_con_1 {
+            grid-area: image;
+        }
+        // image 2 
+        .img_con_2 {
+            grid-area: image2;
+        }
+        // links 
+        .links {
+            grid-area: links;
+            .heading, .para {
+                color: $not_black;
+            }
+
+            // link wrapper 
+            .link_wrapper {
+                @include flex;
+                flex-direction: column;
+                margin-top: 15px;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    text-align: center;
+                    &:first-child {
+                        margin-top: px;
+                    }
+                }
+            }
+        }
+    }
+}

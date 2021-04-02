@@ -1078,6 +1078,85 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   }
 }
 
+#link_section {
+  background: url("../img/bg.png") no-repeat center bottom;
+  background-size: contain;
+}
+#link_section .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "image" "links" "image2";
+  grid-row-gap: 75px;
+}
+@media only screen and (min-width: 768px) {
+  #link_section .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "image image2" "links links";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #link_section .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "image links image2";
+  }
+}
+#link_section .container .img_container {
+  padding: 15px;
+  border-radius: 8px;
+}
+#link_section .container .img_container img {
+  width: 100%;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 576px) {
+  #link_section .container .img_container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #link_section .container .img_container {
+    max-width: 475px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #link_section .container .img_container {
+    max-width: initial;
+  }
+}
+#link_section .container .img_con_1 {
+  grid-area: image;
+}
+#link_section .container .img_con_2 {
+  grid-area: image2;
+}
+#link_section .container .links {
+  grid-area: links;
+}
+#link_section .container .links .heading, #link_section #award_client .container .links .options .heading2, #award_client #link_section .container .links .options .heading2, #link_section #award_client .container .options .links .heading2, #award_client #link_section .container .options .links .heading2, #link_section #client_section .container .links .slider-item .client .name, #client_section #link_section .container .links .slider-item .client .name, #link_section #client_section .container .slider-item .client .links .name, #client_section #link_section .container .slider-item .client .links .name, #link_section #need_help .container .links .sm_heading, #need_help #link_section .container .links .sm_heading, #link_section .container .links .para {
+  color: #484848;
+}
+#link_section .container .links .link_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 15px;
+}
+#link_section .container .links .link_wrapper a {
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+  text-align: center;
+}
+#link_section .container .links .link_wrapper a:first-child {
+  margin-top: px;
+}
+
 * {
   margin: 0;
   padding: 0;
