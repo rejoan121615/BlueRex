@@ -1,0 +1,101 @@
+#need_help {
+    // background: url('../img/contact-Bg-sm-color.png') no-repeat center center;
+    // background-size: cover;
+    background-color: $red;
+    // container style
+    .container {
+        .heading,
+        .sm_heading {
+            color: white;
+        }
+        .sm_heading {
+            @extend .heading;
+            font-size: 26px !important;
+            @include resp ($md) {
+                font-size: 30px!important;
+            }
+            @include resp ($lg) {
+                font-size: 35px!important;
+            }
+        }
+        // responsive
+        .para {
+            @include resp($xl) {
+                max-width: 1000px;
+                @include center;
+            }
+        }
+        // form container
+        #form_input {
+            @include flex;
+            flex-direction: column;
+            margin-top: 35px;
+            align-items: center;
+
+            // responsive
+            @include resp($sm) {
+                flex-direction: row;
+                margin-top: 50px;
+            }
+
+            // input style
+            .input {
+                background-color: lighten($color: $red, $amount: 10);
+                border: none;
+                border-radius: 8px;
+                font-family: $para;
+                color: white;
+                @include padX(15px, 15px);
+                @include padY(30px, 30px);
+                margin-bottom: 25px;
+                font-size: 1rem;
+                max-width: 550px;
+                width: 100%;
+
+                // responsive
+                @include resp($sm) {
+                    width: 47%;
+                }
+
+                @include resp($md) {
+                    width: 38%;
+                    margin-bottom: 0px;
+                }
+
+                @include resp($lg) {
+                    width: 43%;
+                }
+
+                // placeholder
+                &::placeholder {
+                    color: white;
+                    text-transform: capitalize;
+                }
+                // last child
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                &::selection,
+                &:focus,
+                &:focus-visible {
+                    border: none;
+                }
+            }
+            .border_btn {
+                border: 0;
+                border-bottom: 8px solid lighten($color: $violet, $amount: 20);
+                background-color: $violet;
+                cursor: pointer;
+                padding: 15px 35px;
+
+                // responsive
+                @include resp($sm) {
+                    margin-top: 30px;
+                }
+                @include resp($md) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

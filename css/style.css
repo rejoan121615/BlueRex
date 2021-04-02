@@ -105,7 +105,7 @@
   width: 40px;
   margin-right: 10px;
 }
-#header nav.container .brand .heading, #header #client_section nav.container .brand .slider-item .client .name, #client_section #header nav.container .brand .slider-item .client .name, #header #client_section nav.container .slider-item .client .brand .name, #client_section #header nav.container .slider-item .client .brand .name, #header #award_client nav.container .brand .options .heading2, #award_client #header nav.container .brand .options .heading2, #header #award_client nav.container .options .brand .heading2, #award_client #header nav.container .options .brand .heading2 {
+#header nav.container .brand .heading, #header #need_help nav.container .brand .sm_heading, #need_help #header nav.container .brand .sm_heading, #header #client_section nav.container .brand .slider-item .client .name, #client_section #header nav.container .brand .slider-item .client .name, #header #client_section nav.container .slider-item .client .brand .name, #client_section #header nav.container .slider-item .client .brand .name, #header #award_client nav.container .brand .options .heading2, #award_client #header nav.container .brand .options .heading2, #header #award_client nav.container .options .brand .heading2, #award_client #header nav.container .options .brand .heading2 {
   display: inline-block;
   font-size: 1.8rem;
 }
@@ -232,7 +232,7 @@ main#main .texts {
     margin-right: auto;
   }
 }
-main#main .texts .heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
   margin-top: 15px;
 }
 main#main .texts .para {
@@ -303,6 +303,8 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #need_help .container .ideas .sm_heading,
+#need_help #dream_big .container .ideas .sm_heading,
 #dream_big #client_section .container .ideas .slider-item .client .name,
 #client_section #dream_big .container .ideas .slider-item .client .name,
 #dream_big #client_section .container .slider-item .client .ideas .name,
@@ -318,6 +320,8 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 @media only screen and (min-width: 1200px) {
   #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #need_help .container .ideas .sm_heading,
+#need_help #dream_big .container .ideas .sm_heading,
 #dream_big #client_section .container .ideas .slider-item .client .name,
 #client_section #dream_big .container .ideas .slider-item .client .name,
 #dream_big #client_section .container .slider-item .client .ideas .name,
@@ -331,7 +335,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
     text-align: left;
   }
 }
-#dream_big .container .ideas .heading, #dream_big #client_section .container .ideas .slider-item .client .name, #client_section #dream_big .container .ideas .slider-item .client .name, #dream_big #client_section .container .slider-item .client .ideas .name, #client_section #dream_big .container .slider-item .client .ideas .name, #dream_big #award_client .container .ideas .options .heading2, #award_client #dream_big .container .ideas .options .heading2, #dream_big #award_client .container .options .ideas .heading2, #award_client #dream_big .container .options .ideas .heading2 {
+#dream_big .container .ideas .heading, #dream_big #need_help .container .ideas .sm_heading, #need_help #dream_big .container .ideas .sm_heading, #dream_big #client_section .container .ideas .slider-item .client .name, #client_section #dream_big .container .ideas .slider-item .client .name, #dream_big #client_section .container .slider-item .client .ideas .name, #client_section #dream_big .container .slider-item .client .ideas .name, #dream_big #award_client .container .ideas .options .heading2, #award_client #dream_big .container .ideas .options .heading2, #dream_big #award_client .container .options .ideas .heading2, #award_client #dream_big .container .options .ideas .heading2 {
   margin-top: 25px;
 }
 @media only screen and (min-width: 1200px) {
@@ -482,7 +486,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   margin-left: auto;
   margin-right: auto;
 }
-#award_client .container .options .heading, #award_client #client_section .container .options .slider-item .client .name, #client_section #award_client .container .options .slider-item .client .name, #award_client #client_section .container .slider-item .client .options .name, #client_section #award_client .container .slider-item .client .options .name, #award_client .container .options .heading2 {
+#award_client .container .options .heading, #award_client #need_help .container .options .sm_heading, #need_help #award_client .container .options .sm_heading, #award_client #client_section .container .options .slider-item .client .name, #client_section #award_client .container .options .slider-item .client .name, #award_client #client_section .container .slider-item .client .options .name, #client_section #award_client .container .slider-item .client .options .name, #award_client .container .options .heading2 {
   margin-top: 25px;
 }
 #award_client .container .options .heading2 {
@@ -510,10 +514,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
     background-size: initial;
   }
 }
-#lets_grow .container .sec_heading, #lets_grow .container .heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2, #lets_grow .container .para {
+#lets_grow .container .sec_heading, #lets_grow .container .heading, #lets_grow #need_help .container .sm_heading, #need_help #lets_grow .container .sm_heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2, #lets_grow .container .para {
   color: #484848;
 }
-#lets_grow .container .heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2 {
+#lets_grow .container .heading, #lets_grow #need_help .container .sm_heading, #need_help #lets_grow .container .sm_heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2 {
   margin-top: 25px;
 }
 #lets_grow .container .para {
@@ -562,6 +566,8 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #creative_agency .container .text .sec_heading,
 #creative_agency .container .text .heading,
+#creative_agency #need_help .container .text .sm_heading,
+#need_help #creative_agency .container .text .sm_heading,
 #creative_agency #client_section .container .text .slider-item .client .name,
 #client_section #creative_agency .container .text .slider-item .client .name,
 #creative_agency #client_section .container .slider-item .client .text .name,
@@ -660,13 +666,15 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #recent_work .container .para,
 #recent_work .container .heading,
+#recent_work #need_help .container .sm_heading,
+#need_help #recent_work .container .sm_heading,
 #recent_work #client_section .container .slider-item .client .name,
 #client_section #recent_work .container .slider-item .client .name,
 #recent_work #award_client .container .options .heading2,
 #award_client #recent_work .container .options .heading2 {
   color: #484848;
 }
-#recent_work .container .heading, #recent_work #client_section .container .slider-item .client .name, #client_section #recent_work .container .slider-item .client .name, #recent_work #award_client .container .options .heading2, #award_client #recent_work .container .options .heading2 {
+#recent_work .container .heading, #recent_work #need_help .container .sm_heading, #need_help #recent_work .container .sm_heading, #recent_work #client_section .container .slider-item .client .name, #client_section #recent_work .container .slider-item .client .name, #recent_work #award_client .container .options .heading2, #award_client #recent_work .container .options .heading2 {
   text-transform: capitalize;
 }
 #recent_work .container #work_list #select_container {
@@ -836,7 +844,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   background: url("../img/client_xxl.jpg") no-repeat center center;
   background-size: cover;
 }
-#client_section .container .heading, #client_section .container .slider-item .client .name, #client_section #award_client .container .options .heading2, #award_client #client_section .container .options .heading2,
+#client_section .container .heading, #client_section #need_help .container .sm_heading, #need_help #client_section .container .sm_heading, #client_section .container .slider-item .client .name, #client_section #award_client .container .options .heading2, #award_client #client_section .container .options .heading2,
 #client_section .container .para {
   color: white;
 }
@@ -914,6 +922,106 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   margin-top: 10px;
 }
 
+#need_help {
+  background-color: #f42267;
+}
+#need_help .container .heading, #need_help #award_client .container .options .heading2, #award_client #need_help .container .options .heading2, #need_help #client_section .container .slider-item .client .name, #client_section #need_help .container .slider-item .client .name,
+#need_help .container .sm_heading {
+  color: white;
+}
+#need_help .container .sm_heading {
+  font-size: 26px !important;
+}
+@media only screen and (min-width: 992px) {
+  #need_help .container .sm_heading {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #need_help .container .sm_heading {
+    font-size: 35px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #need_help .container .para {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#need_help .container #form_input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 35px;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  #need_help .container #form_input {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+#need_help .container #form_input .input {
+  background-color: #f65388;
+  border: none;
+  border-radius: 8px;
+  font-family: MontRegular;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  max-width: 550px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  #need_help .container #form_input .input {
+    width: 47%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #need_help .container #form_input .input {
+    width: 38%;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #need_help .container #form_input .input {
+    width: 43%;
+  }
+}
+#need_help .container #form_input .input::placeholder {
+  color: white;
+  text-transform: capitalize;
+}
+#need_help .container #form_input .input:last-child {
+  margin-bottom: 0px;
+}
+#need_help .container #form_input .input::selection, #need_help .container #form_input .input:focus, #need_help .container #form_input .input:focus-visible {
+  border: none;
+}
+#need_help .container #form_input .border_btn {
+  border: 0;
+  border-bottom: 8px solid #7a51c1;
+  background-color: #4b2d7f;
+  cursor: pointer;
+  padding: 15px 35px;
+}
+@media only screen and (min-width: 768px) {
+  #need_help .container #form_input .border_btn {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #need_help .container #form_input .border_btn {
+    margin: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -931,17 +1039,17 @@ footer {
   width: 100%;
 }
 
-.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
+.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name, #need_help .container .sm_heading {
   font-family: MontSemiBold;
   font-size: 2.6rem;
 }
 @media only screen and (min-width: 1200px) {
-  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
+  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name, #need_help .container .sm_heading {
     font-size: 2.9rem;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
+  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name, #need_help .container .sm_heading {
     font-size: 3.5rem;
   }
 }
@@ -981,13 +1089,13 @@ footer {
   }
 }
 
-.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name,
+.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name, #need_help .container .sm_heading,
 .sec_heading,
 .para {
   color: white;
   text-align: center;
 }
-.heading::first-letter, #award_client .container .options .heading2::first-letter, #client_section .container .slider-item .client .name::first-letter,
+.heading::first-letter, #award_client .container .options .heading2::first-letter, #client_section .container .slider-item .client .name::first-letter, #need_help .container .sm_heading::first-letter,
 .sec_heading::first-letter,
 .para::first-letter {
   text-transform: capitalize;
