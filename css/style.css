@@ -105,7 +105,7 @@
   width: 40px;
   margin-right: 10px;
 }
-#header nav.container .brand .heading, #header #award_client nav.container .brand .options .heading2, #award_client #header nav.container .brand .options .heading2, #header #award_client nav.container .options .brand .heading2, #award_client #header nav.container .options .brand .heading2 {
+#header nav.container .brand .heading, #header #client_section nav.container .brand .slider-item .client .name, #client_section #header nav.container .brand .slider-item .client .name, #header #client_section nav.container .slider-item .client .brand .name, #client_section #header nav.container .slider-item .client .brand .name, #header #award_client nav.container .brand .options .heading2, #award_client #header nav.container .brand .options .heading2, #header #award_client nav.container .options .brand .heading2, #award_client #header nav.container .options .brand .heading2 {
   display: inline-block;
   font-size: 1.8rem;
 }
@@ -232,7 +232,7 @@ main#main .texts {
     margin-right: auto;
   }
 }
-main#main .texts .heading, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+main#main .texts .heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
   margin-top: 15px;
 }
 main#main .texts .para {
@@ -303,6 +303,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #client_section .container .ideas .slider-item .client .name,
+#client_section #dream_big .container .ideas .slider-item .client .name,
+#dream_big #client_section .container .slider-item .client .ideas .name,
+#client_section #dream_big .container .slider-item .client .ideas .name,
 #dream_big #award_client .container .ideas .options .heading2,
 #award_client #dream_big .container .ideas .options .heading2,
 #dream_big #award_client .container .options .ideas .heading2,
@@ -314,6 +318,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 @media only screen and (min-width: 1200px) {
   #dream_big .container .ideas .sec_heading,
 #dream_big .container .ideas .heading,
+#dream_big #client_section .container .ideas .slider-item .client .name,
+#client_section #dream_big .container .ideas .slider-item .client .name,
+#dream_big #client_section .container .slider-item .client .ideas .name,
+#client_section #dream_big .container .slider-item .client .ideas .name,
 #dream_big #award_client .container .ideas .options .heading2,
 #award_client #dream_big .container .ideas .options .heading2,
 #dream_big #award_client .container .options .ideas .heading2,
@@ -323,7 +331,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
     text-align: left;
   }
 }
-#dream_big .container .ideas .heading, #dream_big #award_client .container .ideas .options .heading2, #award_client #dream_big .container .ideas .options .heading2, #dream_big #award_client .container .options .ideas .heading2, #award_client #dream_big .container .options .ideas .heading2 {
+#dream_big .container .ideas .heading, #dream_big #client_section .container .ideas .slider-item .client .name, #client_section #dream_big .container .ideas .slider-item .client .name, #dream_big #client_section .container .slider-item .client .ideas .name, #client_section #dream_big .container .slider-item .client .ideas .name, #dream_big #award_client .container .ideas .options .heading2, #award_client #dream_big .container .ideas .options .heading2, #dream_big #award_client .container .options .ideas .heading2, #award_client #dream_big .container .options .ideas .heading2 {
   margin-top: 25px;
 }
 @media only screen and (min-width: 1200px) {
@@ -474,7 +482,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   margin-left: auto;
   margin-right: auto;
 }
-#award_client .container .options .heading, #award_client .container .options .heading2 {
+#award_client .container .options .heading, #award_client #client_section .container .options .slider-item .client .name, #client_section #award_client .container .options .slider-item .client .name, #award_client #client_section .container .slider-item .client .options .name, #client_section #award_client .container .slider-item .client .options .name, #award_client .container .options .heading2 {
   margin-top: 25px;
 }
 #award_client .container .options .heading2 {
@@ -502,10 +510,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
     background-size: initial;
   }
 }
-#lets_grow .container .sec_heading, #lets_grow .container .heading, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2, #lets_grow .container .para {
+#lets_grow .container .sec_heading, #lets_grow .container .heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2, #lets_grow .container .para {
   color: #484848;
 }
-#lets_grow .container .heading, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2 {
+#lets_grow .container .heading, #lets_grow #client_section .container .slider-item .client .name, #client_section #lets_grow .container .slider-item .client .name, #lets_grow #award_client .container .options .heading2, #award_client #lets_grow .container .options .heading2 {
   margin-top: 25px;
 }
 #lets_grow .container .para {
@@ -554,6 +562,10 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #creative_agency .container .text .sec_heading,
 #creative_agency .container .text .heading,
+#creative_agency #client_section .container .text .slider-item .client .name,
+#client_section #creative_agency .container .text .slider-item .client .name,
+#creative_agency #client_section .container .slider-item .client .text .name,
+#client_section #creative_agency .container .slider-item .client .text .name,
 #creative_agency #award_client .container .text .options .heading2,
 #award_client #creative_agency .container .text .options .heading2,
 #creative_agency #award_client .container .options .text .heading2,
@@ -648,11 +660,13 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 }
 #recent_work .container .para,
 #recent_work .container .heading,
+#recent_work #client_section .container .slider-item .client .name,
+#client_section #recent_work .container .slider-item .client .name,
 #recent_work #award_client .container .options .heading2,
 #award_client #recent_work .container .options .heading2 {
   color: #484848;
 }
-#recent_work .container .heading, #recent_work #award_client .container .options .heading2, #award_client #recent_work .container .options .heading2 {
+#recent_work .container .heading, #recent_work #client_section .container .slider-item .client .name, #client_section #recent_work .container .slider-item .client .name, #recent_work #award_client .container .options .heading2, #award_client #recent_work .container .options .heading2 {
   text-transform: capitalize;
 }
 #recent_work .container #work_list #select_container {
@@ -818,6 +832,88 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   }
 }
 
+#client_section {
+  background: url("../img/client_xxl.jpg") no-repeat center center;
+  background-size: cover;
+}
+#client_section .container .heading, #client_section .container .slider-item .client .name, #client_section #award_client .container .options .heading2, #award_client #client_section .container .options .heading2,
+#client_section .container .para {
+  color: white;
+}
+#client_section .container .swiper-container {
+  padding-bottom: 70px;
+  margin-top: 85px;
+}
+#client_section .container .swiper-container .swiper-wrapper {
+  height: auto;
+}
+@media only screen and (min-width: 1200px) {
+  #client_section .container .swiper-container .swiper-pagination {
+    display: none;
+  }
+}
+#client_section .container .swiper-container .swiper-pagination-bullet {
+  background-color: white;
+}
+#client_section .container .swiper-container .swiper-pagination-bullet-active {
+  background-color: #f42267;
+}
+#client_section .container .swiper-container .swiper-button-prev,
+#client_section .container .swiper-container .swiper-button-next {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  #client_section .container .swiper-container .swiper-button-prev,
+#client_section .container .swiper-container .swiper-button-next {
+    display: block;
+  }
+}
+#client_section .container .swiper-container .swiper-button-next, #client_section .container .swiper-container .swiper-button-prev {
+  color: #f42267;
+}
+#client_section .container .slider-item {
+  cursor: grab;
+}
+#client_section .container .slider-item .client_img {
+  width: 85%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1200px) {
+  #client_section .container .slider-item .para {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#client_section .container .slider-item .client {
+  margin-top: 25px;
+}
+@media only screen and (min-width: 1200px) {
+  #client_section .container .slider-item .client {
+    margin-top: 50px;
+  }
+}
+#client_section .container .slider-item .client .star_container {
+  width: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+#client_section .container .slider-item .client .star_container img {
+  display: block;
+  width: 17%;
+  cursor: pointer;
+}
+#client_section .container .slider-item .client .name {
+  font-size: 22px !important;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -835,17 +931,17 @@ footer {
   width: 100%;
 }
 
-.heading, #award_client .container .options .heading2 {
+.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
   font-family: MontSemiBold;
   font-size: 2.6rem;
 }
 @media only screen and (min-width: 1200px) {
-  .heading, #award_client .container .options .heading2 {
+  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
     font-size: 2.9rem;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .heading, #award_client .container .options .heading2 {
+  .heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name {
     font-size: 3.5rem;
   }
 }
@@ -885,13 +981,13 @@ footer {
   }
 }
 
-.heading, #award_client .container .options .heading2,
+.heading, #award_client .container .options .heading2, #client_section .container .slider-item .client .name,
 .sec_heading,
 .para {
   color: white;
   text-align: center;
 }
-.heading::first-letter, #award_client .container .options .heading2::first-letter,
+.heading::first-letter, #award_client .container .options .heading2::first-letter, #client_section .container .slider-item .client .name::first-letter,
 .sec_heading::first-letter,
 .para::first-letter {
   text-transform: capitalize;

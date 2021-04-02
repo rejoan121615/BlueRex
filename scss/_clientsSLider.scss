@@ -1,0 +1,88 @@
+#client_section {
+    background: url("../img/client_xxl.jpg") no-repeat center center;
+    background-size: cover;
+    // container style
+    .container {
+        .heading,
+        .para {
+            color: white;
+        }
+
+        // slider customization
+        .swiper-container {
+            padding-bottom: 70px;
+            margin-top: 85px;
+            .swiper-wrapper {
+                height: auto;
+            }
+            // swiper pagination
+            .swiper-pagination {
+                @include resp($lg) {
+                    display: none;
+                }
+            }
+            // bullet active
+            .swiper-pagination-bullet {
+                background-color: white;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: $red;
+            }
+            // slider button
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+                @include resp($md) {
+                    display: block;
+                }
+            }
+            .swiper-button-next, .swiper-button-prev {
+                color: $red;
+            }
+        }
+
+        // slider items
+
+        .slider-item {
+            cursor: grab;
+            .client_img {
+                width: 85%;
+                max-width: 300px;
+                display: block;
+                @include center;
+            }
+            // para
+            .para {
+                @include resp($lg) {
+                    width: 800px;
+                    @include center;
+                }
+            }
+            .client {
+                margin-top: 25px;
+                // responsive 
+                @include resp ($lg) {
+                    margin-top: 50px;
+                }
+                // star container style
+                .star_container {
+                    width: 150px;
+                    @include flex;
+                    @include center;
+                    img {
+                        display: block;
+                        width: (85% / 5);
+                        cursor: pointer;
+                    }
+                }
+                // name style
+                .name {
+                    @extend .heading;
+                    font-size: 22px !important;
+                    // text-align: left!important;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
