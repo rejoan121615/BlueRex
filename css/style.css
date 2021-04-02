@@ -1157,6 +1157,24 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   margin-top: px;
 }
 
+#footer {
+  background-color: #e9b759;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+#footer .heading, #footer #award_client .container .options .heading2, #award_client .container .options #footer .heading2, #footer #client_section .container .slider-item .client .name, #client_section .container .slider-item .client #footer .name, #footer #need_help .container .sm_heading, #need_help .container #footer .sm_heading {
+  font-size: 1.2rem !important;
+}
+#footer .heading a, #footer #award_client .container .options .heading2 a, #award_client .container .options #footer .heading2 a, #footer #client_section .container .slider-item .client .name a, #client_section .container .slider-item .client #footer .name a, #footer #need_help .container .sm_heading a, #need_help .container #footer .sm_heading a {
+  color: #f42267;
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-decoration ease-in-out 0.5s;
+}
+#footer .heading a:hover, #footer #award_client .container .options .heading2 a:hover, #award_client .container .options #footer .heading2 a:hover, #footer #client_section .container .slider-item .client .name a:hover, #client_section .container .slider-item .client #footer .name a:hover, #footer #need_help .container .sm_heading a:hover, #need_help .container #footer .sm_heading a:hover {
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
