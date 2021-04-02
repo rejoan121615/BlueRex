@@ -1,0 +1,58 @@
+#brands {
+    background-color: $violet;
+    // container
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 20px;
+        justify-items: center;
+        grid-row-gap: 40px;
+        // responsive 
+        @include resp ($x_sm) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+        }
+        @include resp ($sm) {
+            @include center;
+            max-width: 735px;
+        }
+        @include resp ($md) {
+            max-width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 45px;
+        }
+        @include resp ($lg) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        // image
+        .items {
+            text-align: center;
+            max-width: 175px;
+            display: flex;
+            align-items: center;
+   
+            // responsive 
+            @include resp ($x_sm) {
+                max-width: initial;
+            }
+            img {
+                width: 100%;
+                display: block;
+                @include center;
+                // responsive 
+                @include resp ($x_sm) {
+                    width: 65%;
+                }
+                @include resp ($lg) {
+                    width: 150px;
+                }
+            }
+        }
+        .ball {
+            @include resp ($md) {
+                width: 55%;
+            }
+        }
+    }
+}

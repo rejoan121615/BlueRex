@@ -749,6 +749,75 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   }
 }
 
+#brands {
+  background-color: #4b2d7f;
+}
+#brands .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  justify-items: center;
+  grid-row-gap: 40px;
+}
+@media only screen and (min-width: 576px) {
+  #brands .container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #brands .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 735px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #brands .container {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 45px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #brands .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#brands .container .items {
+  text-align: center;
+  max-width: 175px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 576px) {
+  #brands .container .items {
+    max-width: initial;
+  }
+}
+#brands .container .items img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 576px) {
+  #brands .container .items img {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #brands .container .items img {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #brands .container .ball {
+    width: 55%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
