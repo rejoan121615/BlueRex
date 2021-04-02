@@ -32,3 +32,30 @@ const dreamBtnList = document.querySelectorAll(
 
 
 
+dreamBtnList.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+        removeClass(dreamBtnList)
+        item.classList.add("select_active");
+    })
+})
+
+// -----------------------------------
+// work list 
+// -------------------------------------
+
+const workBtnList = document.querySelectorAll(
+    "#work_list #platform_select #select_container li"
+);
+
+console.log(workBtnList)
+
+
+// ----------------------------------------------------
+// globally used function 
+// ----------------------------------------------------
+
+function removeClass(list) {
+    list.forEach((item, index) => {
+        item.classList.remove("select_active");
+    });
+}

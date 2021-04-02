@@ -60,10 +60,19 @@
                     li {
                         list-style: none;
                         margin-bottom: 15px;
-                        color: white !important;
+                        background-color: transparent;
+                        color: $not_black;
                         text-align: center;
                         &:last-child {
                             margin-bottom: 0px;
+                        }
+                        // transition 
+                        transition: background-color ease 0.5s, color ease 0.5s;
+
+                        // hover 
+                        &:hover {
+                            background-color: $red;
+                            color: white;
                         }
                         // responsive
                         @include resp($x_sm) {

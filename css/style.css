@@ -412,11 +412,17 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 #select_container li {
   list-style: none;
   margin-bottom: 15px;
-  color: white !important;
+  background-color: transparent;
+  color: #484848;
   text-align: center;
+  transition: background-color ease 0.5s, color ease 0.5s;
 }
 #select_container li:last-child {
   margin-bottom: 0px;
+}
+#select_container li:hover {
+  background-color: #f42267;
+  color: white;
 }
 @media only screen and (min-width: 576px) {
   #select_container li {
@@ -1347,6 +1353,11 @@ footer {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.select_active {
+  color: white !important;
+  background-color: #f42267 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

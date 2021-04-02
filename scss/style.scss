@@ -133,3 +133,10 @@ footer {
     border-radius: 20px;
     @include center;
 }
+
+
+// active class 
+.select_active {
+    color: white!important;
+    background-color: $red!important;
+}
