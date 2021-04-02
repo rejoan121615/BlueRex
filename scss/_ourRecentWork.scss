@@ -1,0 +1,102 @@
+#recent_work {
+    background-color: $not_white;
+    .container {
+        .para,
+        .heading {
+            color: $not_black;
+        }
+        .heading {
+            text-transform: capitalize;
+        }
+        // work list selection
+        #work_list {
+            #select_container {
+                @include flex;
+                margin-top: 50px;
+                flex-direction: column;
+                // responsive 
+                @include resp ($x_sm) {
+                    flex-direction: row;
+                }
+                // responsive 
+                @include resp ($lg) {
+                    max-width: 850px;
+                    @include center;
+                }
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    // responsive 
+                    @include resp ($lg) {
+                        flex-basis: initial;
+                        &:last-child {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        // work list container
+        #work_list_container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-content: space-around;
+            grid-row-gap: 25px;
+            grid-column-gap: 25px;
+            margin-top: 100px;
+            max-width: 450px;
+            @include center;
+            
+
+            // responsive 
+            @include resp ($sm) {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 25px;
+                max-width: 800px;
+            }
+            @include resp ($md) {
+                max-width: 900px;
+                grid-column-gap: 40px;
+                grid-row-gap: 40px;
+            }
+            @include resp ($lg) {
+                margin-top: 65px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 35px;
+                max-width: initial;
+                width: 100%;
+            }
+
+            // @include resp ($)
+
+            // images
+            .items {
+                cursor: pointer;
+                border-radius: 8px;
+                transition: box-shadow 0.4s;
+                border: 1px solid wheat;
+                &:hover {
+                    box-shadow: -5px -5px 10px #484848, 5px 5px 10px #484848;
+                    border-color: transparent;
+                }
+                img {
+                    display: block;
+                    @include center;
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+        // load more btn 
+        .btn_wrapper {
+            text-align: center;
+            margin-top: 80px;
+            // responsive 
+            @include resp ($x_sm) {
+                margin-top: 135px;
+            }
+        }
+    }
+}
