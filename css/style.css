@@ -234,6 +234,45 @@ main#main .texts {
 }
 main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
   margin-top: 15px;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main#main .texts .heading, main#main .texts #need_help .container .sm_heading, #need_help .container main#main .texts .sm_heading, main#main .texts #client_section .container .slider-item .client .name, #client_section .container .slider-item .client main#main .texts .name, main#main .texts #award_client .container .options .heading2, #award_client .container .options main#main .texts .heading2 {
+    font-size: 4.2rem;
+  }
+}
+main#main .texts .sec_heading {
+  font-size: 2.4rem;
+}
+@media only screen and (min-width: 992px) {
+  main#main .texts .sec_heading {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main#main .texts .sec_heading {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main#main .texts .sec_heading {
+    font-size: 3rem;
+  }
 }
 main#main .texts .para {
   margin-top: 35px;
@@ -313,7 +352,6 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 #award_client #dream_big .container .ideas .options .heading2,
 #dream_big #award_client .container .options .ideas .heading2,
 #award_client #dream_big .container .options .ideas .heading2,
-#dream_big .container .ideas li,
 #dream_big .container .ideas .para {
   color: #484848;
 }
@@ -330,7 +368,6 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 #award_client #dream_big .container .ideas .options .heading2,
 #dream_big #award_client .container .options .ideas .heading2,
 #award_client #dream_big .container .options .ideas .heading2,
-#dream_big .container .ideas li,
 #dream_big .container .ideas .para {
     text-align: left;
   }
@@ -369,6 +406,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   #select_container {
     margin-left: 0px;
     margin-right: 0px;
+    max-width: initial;
   }
 }
 #select_container li {
@@ -401,6 +439,8 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   #select_container li {
     flex-basis: initial;
     margin-bottom: 0px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 
@@ -703,6 +743,7 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
 @media only screen and (min-width: 1200px) {
   #recent_work .container #work_list #select_container li {
     flex-basis: initial;
+    margin-bottom: 0px;
   }
   #recent_work .container #work_list #select_container li:last-child {
     margin-bottom: 0px;

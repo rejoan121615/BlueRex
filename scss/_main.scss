@@ -4,11 +4,11 @@ main#main {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "feat_img", "texts";
-        // responsive 
-        @include resp ($md) {
+        // responsive
+        @include resp($md) {
             padding-bottom: 150px;
         }
-        @include resp ($lg) {
+        @include resp($lg) {
             @include padX(150px, 200px);
         }
     }
@@ -24,34 +24,62 @@ main#main {
     // main area text
     .texts {
         grid-area: texts;
-        // responsive 
-        @include resp ($lg) {
+        // responsive
+        @include resp($lg) {
             width: 75%;
             @include center;
         }
-        // margin 
+        // margin
         .heading {
             margin-top: 15px;
+            font-size: 3rem;
+            // responsive
+            @include resp($md) {
+                font-size: 3.5rem;
+            }
+            @include resp($lg) {
+                font-size: 3.8rem;
+            }
+            @include resp($xl) {
+                font-size: 4rem;
+            }
+            @include resp($xl) {
+                font-size: 4.2rem;
+            }
+        }
+        .sec_heading {
+            font-size: 2.4rem;
+            // responsive
+            @include resp($md) {
+                font-size: 2.6rem;
+            }
+
+            @include resp($lg) {
+                font-size: 2.8rem;
+            }
+            @include resp($xl) {
+                font-size: 3rem;
+            }
         }
         .para {
             margin-top: 35px;
-            @include resp ($lg) {
+            @include resp($lg) {
                 margin-top: 70px;
             }
             span {
                 display: none;
-                @include resp ($lg) {
+                @include resp($lg) {
                     display: inline;
                 }
             }
         }
-        // btn container 
+        // btn container
         .btn_container {
             margin-top: 110px;
             @include flex;
             flex-direction: column;
             align-items: center;
-            @include resp ($sm) {
+            @include resp($sm) {
                 flex-direction: row;
                 justify-content: space-between;
                 width: 440px;
@@ -62,8 +90,8 @@ main#main {
                     margin-right: 0px;
                     background-color: lighten($color: $violet, $amount: 10);
                     margin-top: 25px;
-                    // responsive 
-                    @include resp ($sm) {
+                    // responsive
+                    @include resp($sm) {
                         margin-top: 0px;
                     }
                     &:hover {
