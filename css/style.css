@@ -161,7 +161,8 @@
   }
   #header nav.container .navbar li:hover {
     transition: background-color 0.8s;
-    background-color: #fa9bbb;
+    background-color: #8f0734;
+    border-radius: 5px;
   }
 }
 #header nav.container .navbar li a {
@@ -172,10 +173,6 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
-  transition: color ease-in 0.2s;
-}
-#header nav.container .navbar li a:hover {
-  color: #fa9bbb;
 }
 @media only screen and (min-width: 1200px) {
   #header nav.container .navbar li a {
@@ -591,24 +588,26 @@ main#main .texts .btn_container .btn:last-child:hover, main#main .texts .btn_con
   }
 }
 
+#creative_agency {
+  background-color: #e9b759;
+}
 #creative_agency .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "video" "texts";
+  grid-template-areas: "texts" "texts";
 }
 @media only screen and (min-width: 1200px) {
   #creative_agency .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "texts video";
+    grid-template-areas: "texts texts";
     grid-column-gap: 35px;
     align-items: center;
   }
 }
 #creative_agency .container .text {
   grid-area: texts;
-  margin-top: 65px;
 }
 #creative_agency .container .text .sec_heading,
 #creative_agency .container .text .heading,

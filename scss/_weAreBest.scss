@@ -1,17 +1,18 @@
 #creative_agency {
+    background-color: darken($color: wheat, $amount: 20);
     .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
-            "video"
+            "texts"
             "texts";
             // responsive 
             @include resp ($lg) {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 1fr;
                 grid-template-areas: 
-                                    'texts video'
+                                    'texts texts'
                 ;
                 grid-column-gap: 35px;
                 align-items: center;
@@ -19,7 +20,6 @@
         // texts section
         .text {
             grid-area: texts;
-            margin-top: 65px;
             .sec_heading,
             .heading,
             .para {

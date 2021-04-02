@@ -67,7 +67,6 @@
             }
             @include resp($xl) {
                 width: 65%;
-
             }
 
             li {
@@ -83,7 +82,8 @@
                     margin-bottom: 0px;
                     &:hover {
                         transition: background-color 0.8s;
-                        background-color: lighten($color: $red, $amount: 25);
+                        background-color: darken($color: $red, $amount: 25);
+                        border-radius: 5px;
                     }
                 }
                 a {
@@ -94,16 +94,10 @@
                     text-decoration: none;
                     color: white;
                     cursor: pointer;
-                    // animation 
-                    transition: color ease-in 0.2s;
-                    &:hover {
-                        color: lighten($red, 25);
-                    }
                     // responsive
                     @include resp($lg) {
                         font-size: 18px;
                         @include padX(10px, 10px);
-                        
                     }
                 }
             }
